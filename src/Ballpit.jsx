@@ -565,14 +565,14 @@ class Y extends c {
 const X = {
   count: 50,
   colors: [0xffffff, 0xa0a0a0, 0x111111, 0x111842, 0x6339E8],
-  ambientColor: 16777215,
+  ambientColor: 0xffffff,
   ambientIntensity: 1,
-  lightIntensity: 100,
+  lightIntensity: 150,
   materialParams: {
-    metalness: 0.5,
-    roughness: 0.5,
-    clearcoat: 1,
-    clearcoatRoughness: 0.15
+    metalness: 0.1,         // Less metallic for a "smooth" clay look
+    roughness: 0.4,         // Higher roughness for matte finish
+    clearcoat: 0.2,
+    clearcoatRoughness: 0.2
   },
   minSize: 0.62,
   maxSize: 1.5,
@@ -580,10 +580,10 @@ const X = {
   gravity: 0.02,
   friction: 0.996,
   wallBounce: 0.95,
-  maxVelocity: 0.01,
+  maxVelocity: 0.03,
   maxX: 5,
   maxY: 5,
-  maxZ: 3,
+  maxZ: 4,
   controlSphere0: true,
   followCursor: false
 };

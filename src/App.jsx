@@ -8,30 +8,33 @@ function App() {
     wallBounce: 0.95,
     minSize: 0.62,
     maxSize: 1.5,
-    size0: 1.0,           // Increased for better mouse disturbance
-    pullForceMultiplier: .5, // Slightly softened for more natural bounce
+    size0: 1.0,           
+    pullForceMultiplier: 0.5, 
     hoverFreq: 1,
     hoverAmp: 0.2,
     minVelocity: 0.001,
-    maxVelocity: 0.03      // Increased to allow energetic bouncing
+    maxVelocity: 0.03      
   };
 
   return (
     <>
       <header className="layout-header">
-        <div className="language-selector">
-          Language : <span className="lang-highlight">Eng</span>
-        </div>
-
-        <div className="logo-container">
+        <a href="/" className="logo-container">
           <h1 className="logo">Agency</h1>
           <span className="logo-reg">®</span>
-        </div>
+        </a>
 
-        <div className="sub-nav">
-          Services | Stack & Culture | Contact
-        </div>
+        <ul className="nav-links">
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#team">Team</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
       </header>
+
+      <main className="foreground-text">
+        <h2>What can we<br />make next</h2>
+      </main>
 
       <div className="canvas-container">
         <Ballpit
