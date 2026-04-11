@@ -1,6 +1,9 @@
+import { useState, useEffect } from 'react';
 import Ballpit from './Ballpit';
 
 function App() {
+  const [showUI, setShowUI] = useState(true);
+
   const settledConfig = {
     count: 50,
     gravity: 0.02,
@@ -8,17 +11,29 @@ function App() {
     wallBounce: 0.95,
     minSize: 0.62,
     maxSize: 1.5,
-    size0: 1.0,
-    pullForceMultiplier: 0.5,
+    size0: 1.0,           
+    pullForceMultiplier: 0.5, 
     hoverFreq: 1,
     hoverAmp: 0.2,
     minVelocity: 0.001,
-    maxVelocity: 0.03
+    maxVelocity: 0.03      
   };
+
+  useEffect(() => {
+    const handleKeyDown = (e) => {
+      // Toggle visibility on Shift + V
+      if (e.shiftKey && e.key.toLowerCase() === 'v') {
+        setShowUI(prev => !prev);
+      }
+    };
+
+    window.addEventListener('keydown', handleKeyDown);
+    return () => window.removeEventListener('keydown', handleKeyDown);
+  }, []);
 
   return (
     <>
-      <header className="layout-header">
+      <header className={`layout-header ${!showUI ? 'hidden' : ''}`}>
         <a href="/" className="logo-container">
           <h1 className="logo">Agency</h1>
           <span className="logo-reg">®</span>
@@ -32,7 +47,7 @@ function App() {
         </ul>
       </header>
 
-      <main className="foreground-text">
+      <main className={`foreground-text ${!showUI ? 'hidden' : ''}`}>
         <h2>What's your next<br />iconic move ?</h2>
       </main>
 

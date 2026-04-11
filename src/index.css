@@ -36,6 +36,7 @@ html {
   pointer-events: none;
   z-index: 5;
   padding: 0 5rem;
+  transition: opacity 0.6s cubic-bezier(0.4, 0, 0.2, 1); /* Smooth editorial transition */
 }
 
 .foreground-text h2 {
@@ -64,6 +65,14 @@ html {
   justify-content: space-between;
   align-items: center;
   pointer-events: none;
+  transition: opacity 0.5s ease;
+}
+
+/* Visibility Toggle */
+.layout-header.hidden,
+.foreground-text.hidden {
+  opacity: 0;
+  pointer-events: none !important;
 }
 
 .layout-header * {
