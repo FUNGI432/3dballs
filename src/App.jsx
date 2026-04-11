@@ -8,12 +8,12 @@ function App() {
     wallBounce: 0.95,
     minSize: 0.62,
     maxSize: 1.5,
-    size0: 1.0,           
-    pullForceMultiplier: 0.5, 
+    size0: 1.0,
+    pullForceMultiplier: 0.5,
     hoverFreq: 1,
     hoverAmp: 0.2,
     minVelocity: 0.001,
-    maxVelocity: 0.03      
+    maxVelocity: 0.03
   };
 
   return (
@@ -33,7 +33,7 @@ function App() {
       </header>
 
       <main className="foreground-text">
-        <h2>What can we<br />make next</h2>
+        <h2>What's your next<br />iconic move</h2>
       </main>
 
       <div className="canvas-container">

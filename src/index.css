@@ -1,13 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Syne:wght@400;800&display=swap');
 
-body, html {
+@font-face {
+  font-family: 'National 2 Condensed';
+  src: url('./assets/National 2 Condensed Extrabold-normal-900-100.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+}
+
+body,
+html {
   margin: 0;
   padding: 0;
   width: 100%;
   height: 100%;
-  background-color: #f0eee9; /* Soft cream base */
-  background: radial-gradient(circle at top left, #f5f4f0 0%, #e8e6e0 100%);
-  color: #131313;
+  background-color: #f0eee9;
+  /* Soft cream base */
+  background: radial-gradient(circle at top left, #f1f1f1 0%, #ffffff 100%);
+  color: #ffffff;
   font-family: 'Outfit', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   overflow: hidden;
 }
@@ -30,15 +39,18 @@ body, html {
 }
 
 .foreground-text h2 {
-  font-family: 'Playfair Display', serif;
+  font-family: 'National 2 Condensed', sans-serif;
   font-size: clamp(4rem, 12vw, 15rem);
   line-height: 0.9;
   text-align: center;
   margin: 0;
-  color: #131313;
+  color: #ffffff;
+  /* Changed to dark to match the editorial look */
   letter-spacing: -0.04em;
-  font-weight: 400;
+  font-weight: 800;
   text-transform: uppercase;
+  text-shadow: 0 20px 80px rgba(0, 0, 0, 0.1), 0 10px 30px rgba(0, 0, 0, 0.05);
+  /* Soft editorial shadow */
 }
 
 .layout-header {
@@ -68,12 +80,14 @@ body, html {
 
 .logo {
   font-family: 'Syne', sans-serif;
-  font-size: 4rem; /* Significantly larger as requested */
+  font-size: 3rem;
+  /* Significantly larger as requested */
   font-weight: 800;
   letter-spacing: -2px;
   line-height: 1;
   margin: 0;
-  color: #4e37ff; /* Keeping the purple */
+  color: #4e37ff;
+  /* Keeping the purple */
 }
 
 .logo-reg {
@@ -85,7 +99,8 @@ body, html {
 
 .nav-links {
   display: flex;
-  gap: 4rem; /* Slightly more spacing */
+  gap: 4rem;
+  /* Slightly more spacing */
   list-style: none;
   margin: 0;
   padding: 0;
@@ -94,8 +109,9 @@ body, html {
 .nav-links a {
   text-decoration: none;
   color: #131313;
-  font-size: 1.1rem; /* Slightly larger nav text */
-  font-weight: 600;
+  font-size: 1.1rem;
+  /* Slightly larger nav text */
+  font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.1em;
   opacity: 0.6;
@@ -120,7 +136,16 @@ body, html {
 }
 
 @media (max-width: 1024px) {
-  .layout-header { padding: 1.5rem 2rem; }
-  .nav-links { display: none; } /* Hide navbar for mobile simple view */
-  .foreground-text { padding: 0 2rem; }
+  .layout-header {
+    padding: 1.5rem 2rem;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  /* Hide navbar for mobile simple view */
+  .foreground-text {
+    padding: 0 2rem;
+  }
 }
