@@ -33,7 +33,7 @@ function App() {
       </header>
 
       <main className="foreground-text">
-        <h2>What's your next<br />iconic move</h2>
+        <h2>What's your next<br />iconic move ?</h2>
       </main>
 
       <div className="canvas-container">
