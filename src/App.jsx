@@ -1,72 +1,71 @@
-import { useState, useEffect } from 'react';
-import Ballpit from './Ballpit';
+import React from 'react';
+import { LanguageProvider } from './context/LanguageContext';
+import Navbar from './components/Navbar';
+import Hero from './components/Hero';
+import Scene from './components/Scene';
+import Marquee from './components/Marquee';
+import WhatWeDo from './components/WhatWeDo';
+import WeMoveIdeas from './components/WeMoveIdeas';
+import Portfolio from './components/Portfolio';
+import Philosophy from './components/Philosophy';
+import Services from './components/Services';
+import ArrivePrepared from './components/ArrivePrepared';
+import StatsAndTrust from './components/StatsAndTrust';
+import Footer from './components/Footer';
 
-function App() {
-  const [showUI, setShowUI] = useState(true);
-
-  const settledConfig = {
-    count: 50,
-    gravity: 0.02,
-    friction: 0.996,
-    wallBounce: 0.95,
-    minSize: 0.62,
-    maxSize: 1.5,
-    size0: 1.0,           
-    pullForceMultiplier: 0.5, 
-    hoverFreq: 1,
-    hoverAmp: 0.2,
-    minVelocity: 0.001,
-    maxVelocity: 0.03      
-  };
-
-  useEffect(() => {
-    const handleKeyDown = (e) => {
-      // Toggle visibility on Shift + V
-      if (e.shiftKey && e.key.toLowerCase() === 'v') {
-        setShowUI(prev => !prev);
-      }
-    };
-
-    window.addEventListener('keydown', handleKeyDown);
-    return () => window.removeEventListener('keydown', handleKeyDown);
-  }, []);
-
+export default function App() {
   return (
-    <>
-      <header className={`layout-header ${!showUI ? 'hidden' : ''}`}>
-        <a href="/" className="logo-container">
-          <h1 className="logo">Agency</h1>
-          <span className="logo-reg">®</span>
-        </a>
+    <LanguageProvider>
+      <div className="relative w-full bg-transparent text-white">
+        
+        {/* Sticky Header Navigation (z-index 50) */}
+        <Navbar />
 
-        <ul className="nav-links">
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#team">Team</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </header>
+        {/* Locked 3D WebGL Background (z-index -30) */}
+        <div className="fixed top-0 left-0 w-screen h-screen -z-30">
+          <Scene />
+        </div>
 
-      <main className={`foreground-text ${!showUI ? 'hidden' : ''}`}>
-        <h2>What's your next<br />iconic move ?</h2>
-      </main>
+        {/* Locked Hero Text Foreground (z-index -20, pointer-events bypassed) */}
+        <div className="fixed top-0 left-0 w-screen h-screen -z-20 pointer-events-none bg-transparent flex flex-col justify-center items-center">
+          <Hero />
+        </div>
 
-      <div className="canvas-container">
-        <Ballpit
-          {...settledConfig}
-          followCursor={true}
-          colors={[
-            '#ffffff',
-            '#a0a0a0',
-            '#222222',
-            '#2a2a5a',
-            '#6a4cff',
-            '#9b51e0'
-          ]}
-        />
+        {/* Scrolling Foreground Contents sliding over the fixed Hero (z-index 10) */}
+        <div className="relative z-10 w-full mt-[100vh] bg-transparent flex flex-col">
+          
+          <div className="relative z-30 w-full flex flex-col">
+            <Marquee />
+          </div>
+
+          {/* Dark Section - Pulled UP behind the marquee, padded inside */}
+          <div className="relative z-20 w-full bg-[#131313] pt-32 -mt-24">
+            <WhatWeDo />
+          </div>
+
+          {/* Scroll-Linked Reveal Section */}
+          <WeMoveIdeas />
+
+          {/* Sticky Horizontal Scroll Portfolio Section */}
+          <Portfolio />
+
+          {/* GPU-Accelerated Spotlight Philosophy Section */}
+          <Philosophy />
+
+          {/* Hover-Reveal Services Section */}
+          <Services />
+
+          {/* We Don't Just Show Up Accordion Section */}
+          <ArrivePrepared />
+
+          {/* Stats, Trust & Booking CTA Sections */}
+          <StatsAndTrust />
+
+          {/* Footer Section */}
+          <Footer />
+        </div>
+
       </div>
-    </>
+    </LanguageProvider>
   );
 }
-
-export default App;

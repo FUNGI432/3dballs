@@ -1,160 +1,126 @@
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Syne:wght@400;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700;800&family=Manrope:wght@400;500;700;800&family=Syne:wght@400;800&display=swap');
+@import "tailwindcss";
+
+html, body, #root {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+}
+
+
+
+/* Local Font face declarations pointing to /Fonts/ */
+@font-face {
+  font-family: 'National 2 Condensed';
+  src: url('/Fonts/TestNational2Condensed-Black.otf') format('opentype');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
 
 @font-face {
   font-family: 'National 2 Condensed';
-  src: url('./assets/National 2 Condensed Extrabold-normal-900-100.ttf') format('truetype');
+  src: url('/Fonts/TestNational2Condensed-Extrabold.otf') format('opentype');
   font-weight: 800;
   font-style: normal;
+  font-display: swap;
 }
 
-body,
-html {
+@font-face {
+  font-family: 'Helvetica Now Text';
+  src: url('/Fonts/HelveticaNowText-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Helvetica Now Text';
+  src: url('/Fonts/HelveticaNowText-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Helvetica Now Text';
+  src: url('/Fonts/HelveticaNowText-Black.woff2') format('woff2');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SF Pro';
+  src: url('/Fonts/SF-Pro-Display-Regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SF Pro';
+  src: url('/Fonts/SF-Pro-Display-Bold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@theme {
+  --color-studio-dark: #131313;
+  --color-studio-light: #ffffff;
+  --color-studio-gray-dark: #6a6a6a;
+  --color-studio-gray-medium: #8c8c8c;
+  --color-studio-gray-light: #989898;
+  --color-studio-gray-divider: #d8d3d3;
+
+  --color-brand-purple: #4e37ff;
+  --color-brand-purple-muted: #5d5dff;
+  --color-brand-green: #1dcc5d;
+  --color-brand-blue: #3e66df;
+
+  --font-syne: "Syne", sans-serif;
+  --font-inter: "Inter", sans-serif;
+  --font-manrope: "Manrope", sans-serif;
+  --font-national: "National 2 Condensed", Impact, "Arial Narrow", sans-serif;
+  --font-helvetica: "Helvetica Now Text", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-sf: "SF Pro", -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-bebas: "Bebas Neue", sans-serif;
+
+  --letter-spacing-brutal-tight: -3.38px;
+  --letter-spacing-brutal-mega: -14px;
+  --letter-spacing-logo-tight: -1.40px;
+  --letter-spacing-logo-reg-tight: -2.45px;
+  --letter-spacing-nav-tight: -0.72px;
+}
+
+body {
   margin: 0;
   padding: 0;
-  width: 100%;
-  height: 100%;
-  background-color: #f0eee9;
-  /* Soft cream base */
-  background: radial-gradient(circle at top left, #f1f1f1 0%, #ffffff 100%);
+  font-family: 'Inter', sans-serif;
+  background-color: transparent;
   color: #ffffff;
-  font-family: 'Outfit', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
-#root {
-  min-height: 100vh;
-  position: relative;
+/* Custom Text Shadow for Brutalist Elements */
+.text-shadow-brutal {
+  text-shadow: 0px 3px 25px rgba(0, 0, 0, 0.52);
 }
 
-/* Foreground Overlay */
-.foreground-text {
-  position: fixed;
-  inset: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  pointer-events: none;
-  z-index: 5;
-  padding: 0 5rem;
-  transition: opacity 0.6s cubic-bezier(0.4, 0, 0.2, 1); /* Smooth editorial transition */
+/* Custom Hide Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
 }
-
-.foreground-text h2 {
-  font-family: 'National 2 Condensed', sans-serif;
-  font-size: clamp(4rem, 12vw, 15rem);
-  line-height: 0.9;
-  text-align: center;
-  margin: 0;
-  color: #ffffff;
-  /* Changed to dark to match the editorial look */
-  letter-spacing: -0.04em;
-  font-weight: 800;
-  text-transform: uppercase;
-  text-shadow: 0 20px 80px rgba(0, 0, 0, 0.1), 0 10px 30px rgba(0, 0, 0, 0.05);
-  /* Soft editorial shadow */
+::-webkit-scrollbar-track {
+  background: #131313;
 }
-
-.layout-header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 20;
-  padding: 2.5rem 5rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  pointer-events: none;
-  transition: opacity 0.5s ease;
+::-webkit-scrollbar-thumb {
+  background: #4E37FF;
+  border-radius: 3px;
 }
-
-/* Visibility Toggle */
-.layout-header.hidden,
-.foreground-text.hidden {
-  opacity: 0;
-  pointer-events: none !important;
-}
-
-.layout-header * {
-  pointer-events: auto;
-}
-
-.logo-container {
-  display: flex;
-  align-items: flex-start;
-  gap: 0.25rem;
-  text-decoration: none;
-  color: inherit;
-}
-
-.logo {
-  font-family: 'Syne', sans-serif;
-  font-size: 3rem;
-  /* Significantly larger as requested */
-  font-weight: 800;
-  letter-spacing: -2px;
-  line-height: 1;
-  margin: 0;
-  color: #4e37ff;
-  /* Keeping the purple */
-}
-
-.logo-reg {
-  color: #4e37ff;
-  font-size: 1.5rem;
-  font-weight: 700;
-  margin-top: 0.2rem;
-}
-
-.nav-links {
-  display: flex;
-  gap: 4rem;
-  /* Slightly more spacing */
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.nav-links a {
-  text-decoration: none;
-  color: #131313;
-  font-size: 1.1rem;
-  /* Slightly larger nav text */
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-  opacity: 0.6;
-  transition: opacity 0.3s ease;
-}
-
-.nav-links a:hover {
-  opacity: 1;
-}
-
-.canvas-container {
-  position: fixed;
-  inset: 0;
-  z-index: 1;
-  pointer-events: auto;
-}
-
-.canvas-container canvas {
-  width: 100%;
-  height: 100%;
-  display: block;
-}
-
-@media (max-width: 1024px) {
-  .layout-header {
-    padding: 1.5rem 2rem;
-  }
-
-  .nav-links {
-    display: none;
-  }
-
-  /* Hide navbar for mobile simple view */
-  .foreground-text {
-    padding: 0 2rem;
-  }
+::-webkit-scrollbar-thumb:hover {
+  background: #5D5DFF;
 }

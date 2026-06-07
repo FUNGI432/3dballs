@@ -3,7 +3,6 @@ import {
   Vector3 as a,
   MeshPhysicalMaterial as c,
   InstancedMesh as d,
-  Clock as e,
   AmbientLight as f,
   SphereGeometry as g,
   ShaderChunk as h,
@@ -46,7 +45,7 @@ class x {
   #o;
   #r;
   #a;
-  #c = new e();
+  #c = { lastTime: 0 };
   #h = { elapsed: 0, delta: 0 };
   #l;
   constructor(e) {
@@ -122,8 +121,8 @@ class x {
       e = this.#e.size.width;
       t = this.#e.size.height;
     } else if (this.#e.size === 'parent' && this.canvas.parentNode) {
-      e = this.canvas.parentNode.offsetWidth;
-      t = this.canvas.parentNode.offsetHeight;
+      e = this.canvas.parentNode.offsetWidth || window.innerWidth;
+      t = this.canvas.parentNode.offsetHeight || window.innerHeight;
     } else {
       e = window.innerWidth;
       t = window.innerHeight;
@@ -186,21 +185,22 @@ class x {
     if (this.#n) return;
     const animate = () => {
       this.#l = requestAnimationFrame(animate);
-      this.#h.delta = this.#c.getDelta();
+      const time = performance.now();
+      this.#h.delta = Math.min((time - this.#c.lastTime) / 1000, 0.1);
       this.#h.elapsed += this.#h.delta;
+      this.#c.lastTime = time;
       this.onBeforeRender(this.#h);
       this.render();
       this.onAfterRender(this.#h);
     };
     this.#n = true;
-    this.#c.start();
+    this.#c.lastTime = performance.now();
     animate();
   }
   #z() {
     if (this.#n) {
       cancelAnimationFrame(this.#l);
       this.#n = false;
-      this.#c.stop();
     }
   }
   #i() {
