@@ -69,7 +69,7 @@ export default function StatsAndTrust() {
         {/* Figma Wavy Vector Background */}
         <div className="absolute inset-x-0 top-[14.85%] bottom-[3.34%] pointer-events-none select-none overflow-hidden z-0 opacity-50">
           <img 
-            src="http://localhost:3845/assets/680ec9d8d9cac7c549caff0bb072b1aaf76d19d0.svg" 
+            src="/images/680ec9d8d9cac7c549caff0bb072b1aaf76d19d0.svg" 
             className="w-full h-full object-cover" 
             alt="" 
           />
@@ -80,13 +80,13 @@ export default function StatsAndTrust() {
           {/* Section Title */}
           <h2 className="font-national font-black uppercase text-[clamp(2rem,6.8vw,8rem)] text-white tracking-[-1.692px] text-center leading-[1] select-none flex items-center justify-center gap-4">
             <img 
-              src="http://localhost:3845/assets/fce0d5a73e33f8084dc79fe8120571576ad4261f.svg" 
+              src="/images/fce0d5a73e33f8084dc79fe8120571576ad4261f.svg" 
               className="w-[28px] h-[28px] md:w-[42px] md:h-[42px] object-contain shrink-0" 
               alt="" 
             />
             <span>{t('statsAndTrust.trustHeading')}</span>
             <img 
-              src="http://localhost:3845/assets/fce0d5a73e33f8084dc79fe8120571576ad4261f.svg" 
+              src="/images/fce0d5a73e33f8084dc79fe8120571576ad4261f.svg" 
               className="w-[28px] h-[28px] md:w-[42px] md:h-[42px] object-contain shrink-0" 
               alt="" 
             />
@@ -103,13 +103,13 @@ export default function StatsAndTrust() {
                 {/* User avatar headshot inside oval/capsule container with checkmark badge */}
                 <div className="relative w-[89.4px] h-[128.25px] rounded-[219px] shrink-0">
                   <img 
-                    src="http://localhost:3845/assets/256acf94f3318400339e64d2cfcce167d0ca1dea.png" 
+                    src="/images/256acf94f3318400339e64d2cfcce167d0ca1dea.png" 
                     className="w-full h-full object-cover rounded-[219px]" 
                     alt="Client Avatar" 
                   />
                   {/* Verified checkmark badge */}
                   <img 
-                    src="http://localhost:3845/assets/3934723c4215c73dd5860b2c2140d45072f59be2.svg" 
+                    src="/images/3934723c4215c73dd5860b2c2140d45072f59be2.svg" 
                     className="absolute bottom-[2px] left-[33.3px] w-[22.78px] h-[22.78px] z-10" 
                     alt="Verified checkmark" 
                   />
@@ -132,7 +132,7 @@ export default function StatsAndTrust() {
                 {/* Impressions Header */}
                 <div className="flex items-center gap-6 font-sf font-bold text-[28px] md:text-[36px] uppercase tracking-[1.44px] text-[#5d5dff]">
                   <img 
-                    src="http://localhost:3845/assets/ed1408a7d37ade0318fd8dc82da49acb963a642f.svg" 
+                    src="/images/ed1408a7d37ade0318fd8dc82da49acb963a642f.svg" 
                     className="w-[40.5px] h-[40.5px] object-contain" 
                     alt="Pie chart icon" 
                   />
@@ -153,7 +153,7 @@ export default function StatsAndTrust() {
                   {/* SVG line wave trend graph */}
                   <div className="w-[180px] md:w-[296.36px] shrink-0 pb-1">
                     <img 
-                      src="http://localhost:3845/assets/2b5e34b5dd6eaf60523d22398ac0f24c8c26d482.svg" 
+                      src="/images/2b5e34b5dd6eaf60523d22398ac0f24c8c26d482.svg" 
                       className="w-full h-full object-contain" 
                       alt="Wave trend graph" 
                     />
@@ -175,28 +175,28 @@ export default function StatsAndTrust() {
                 {/* 6 Overlapping Headshots with precise alignment and blue borders */}
                 <div className="relative h-[66px] w-[346px] select-none pl-1">
                   <div className="absolute left-0 w-[66px] h-[66px] rounded-full border-[3px] border-[#4e37ff] overflow-hidden bg-white">
-                    <img src="http://localhost:3845/assets/55410c12424564a172520098826c7b33f9b6d10a.png" className="w-full h-full object-cover" alt="Expert 1" />
+                    <img src="/images/55410c12424564a172520098826c7b33f9b6d10a.png" className="w-full h-full object-cover" alt="Expert 1" />
                   </div>
                   <div className="absolute left-[56px] w-[66px] h-[66px] rounded-full border-[3px] border-[#4e37ff] overflow-hidden bg-white">
-                    <img src="http://localhost:3845/assets/60bdce29cd41a3fe456be72aab2656063232ef95.png" className="w-full h-full object-cover" alt="Expert 2" />
+                    <img src="/images/60bdce29cd41a3fe456be72aab2656063232ef95.png" className="w-full h-full object-cover" alt="Expert 2" />
                   </div>
                   <div className="absolute left-[112px] w-[66px] h-[66px] rounded-full border-[3px] border-[#4e37ff] overflow-hidden bg-white">
-                    <img src="http://localhost:3845/assets/26c80e1826b7f60e598c0d792d531cf393b24a60.png" className="w-full h-full object-cover" alt="Expert 3" />
+                    <img src="/images/26c80e1826b7f60e598c0d792d531cf393b24a60.png" className="w-full h-full object-cover" alt="Expert 3" />
                   </div>
                   <div className="absolute left-[168px] w-[66px] h-[66px] rounded-full border-[3px] border-[#4e37ff] overflow-hidden bg-white">
-                    <img src="http://localhost:3845/assets/41e3302393a1f42f9e1b6de85971864e2ff00630.png" className="w-full h-full object-cover" alt="Expert 4" />
+                    <img src="/images/41e3302393a1f42f9e1b6de85971864e2ff00630.png" className="w-full h-full object-cover" alt="Expert 4" />
                   </div>
                   <div className="absolute left-[224px] w-[66px] h-[66px] rounded-full border-[3px] border-[#4e37ff] overflow-hidden bg-white">
-                    <img src="http://localhost:3845/assets/d8544e2c1c79fd9602ae79f7d14c56fe943f7580.png" className="w-full h-full object-cover" alt="Expert 5" />
+                    <img src="/images/d8544e2c1c79fd9602ae79f7d14c56fe943f7580.png" className="w-full h-full object-cover" alt="Expert 5" />
                   </div>
                   <div className="absolute left-[280px] w-[66px] h-[66px] rounded-full border-[3px] border-[#4e37ff] overflow-hidden bg-white">
-                    <img src="http://localhost:3845/assets/43862ec1954ccba29cb1aac384328f5bbfe1e8b1.png" className="w-full h-full object-cover" alt="Expert 6" />
+                    <img src="/images/43862ec1954ccba29cb1aac384328f5bbfe1e8b1.png" className="w-full h-full object-cover" alt="Expert 6" />
                   </div>
                 </div>
 
                 {/* Divider Line */}
                 <div className="w-full my-2">
-                  <img src="http://localhost:3845/assets/959d4845d969c6cafdb81750e733873129a0a03e.svg" className="w-full h-[1px] object-cover" alt="" />
+                  <img src="/images/959d4845d969c6cafdb81750e733873129a0a03e.svg" className="w-full h-[1px] object-cover" alt="" />
                 </div>
 
                 {/* Description copy with highlighted phrases */}
@@ -261,7 +261,7 @@ export default function StatsAndTrust() {
               {/* Button avatar headshot from Figma */}
               <div className="w-[79px] h-[79px] rounded-full overflow-hidden shrink-0">
                 <img 
-                  src="http://localhost:3845/assets/0d4719dbd2ffc578c6afc338f51039e85f14b2d4.png" 
+                  src="/images/0d4719dbd2ffc578c6afc338f51039e85f14b2d4.png" 
                   className="w-full h-full object-cover" 
                   alt="Consultant Avatar" 
                 />

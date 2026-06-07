@@ -3,17 +3,17 @@ import { useLanguage } from '../context/LanguageContext';
 import { motion, AnimatePresence } from 'framer-motion';
 
 // Live Figma asset URLs for backgrounds and overlays
-const imgImage17 = "http://localhost:3845/assets/471857277f11985e7bb8d4b2e57268c98a943fd4.png";
-const imgUnion = "http://localhost:3845/assets/148674cc8011d1a3a9cd506ec84745f54bd6bb95.svg";
-const imgImage14 = "http://localhost:3845/assets/3dd1f3c3004603ecc4ef221f9d8c0ff8094b675c.png";
-const imgImage15 = "http://localhost:3845/assets/3fb4b7f11d1f44a03a3c3aa2d38e4c023ba53a3b.png";
-const imgGroup5 = "http://localhost:3845/assets/8808074b05664288dc1fba3fcfd3b5cac7b5ffed.svg";
-const imgVector = "http://localhost:3845/assets/4d42e0df1ded18c5fba67a9dfa6ef909a6409940.svg";
-const imgSubtract = "http://localhost:3845/assets/6bebd4345bbe48be5b1bf2478c6f1039b1226cf0.svg";
-const imgSubtract1 = "http://localhost:3845/assets/294d18c8873f6bb4f540668ded62786da1ab19c1.svg";
-const imgSubtract2 = "http://localhost:3845/assets/9d54cb7cec4ae0aef3eafa108fc5183e47abaf6b.svg";
-const imgVector1 = "http://localhost:3845/assets/8c24f2f8812f8e770525c91f94f0fb21046abb27.svg";
-const imgVector2 = "http://localhost:3845/assets/9b956006e8ef3b4c544fc2f174469e18cbe07a25.svg";
+const imgImage17 = "/images/471857277f11985e7bb8d4b2e57268c98a943fd4.png";
+const imgUnion = "/images/148674cc8011d1a3a9cd506ec84745f54bd6bb95.svg";
+const imgImage14 = "/images/3dd1f3c3004603ecc4ef221f9d8c0ff8094b675c.png";
+const imgImage15 = "/images/3fb4b7f11d1f44a03a3c3aa2d38e4c023ba53a3b.png";
+const imgGroup5 = "/images/8808074b05664288dc1fba3fcfd3b5cac7b5ffed.svg";
+const imgVector = "/images/4d42e0df1ded18c5fba67a9dfa6ef909a6409940.svg";
+const imgSubtract = "/images/6bebd4345bbe48be5b1bf2478c6f1039b1226cf0.svg";
+const imgSubtract1 = "/images/294d18c8873f6bb4f540668ded62786da1ab19c1.svg";
+const imgSubtract2 = "/images/9d54cb7cec4ae0aef3eafa108fc5183e47abaf6b.svg";
+const imgVector1 = "/images/8c24f2f8812f8e770525c91f94f0fb21046abb27.svg";
+const imgVector2 = "/images/9b956006e8ef3b4c544fc2f174469e18cbe07a25.svg";
 
 // Service rows data definition
 const servicesData = [

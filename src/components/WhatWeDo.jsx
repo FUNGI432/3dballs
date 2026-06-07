@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 
 // Assets from Figma Dev Mode
 const imgMediaPreview = "/images/image-3.png";
-const imgButtonWatchVideo = "http://localhost:3845/assets/6ac536502359fa574a9d9b9b64fb368a9c6e93d7.svg";
+const imgButtonWatchVideo = "/images/6ac536502359fa574a9d9b9b64fb368a9c6e93d7.svg";
 
 export default function WhatWeDo() {
   const { t } = useLanguage();

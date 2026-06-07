@@ -1,0 +1,7 @@
+<svg preserveAspectRatio="none" width="100%" height="100%" overflow="visible" style="display: block;" viewBox="0 0 40.5 40.5" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="pie-chart">
+<rect width="40.5" height="40.5" rx="20.25" fill="var(--fill-0, #5D5DFF)"/>
+<path id="Vector" d="M28.9927 23.9404C28.3888 25.3685 27.4443 26.6269 26.2417 27.6056C25.0392 28.5843 23.6151 29.2535 22.0942 29.5548C20.5732 29.856 19.0016 29.7801 17.5168 29.3336C16.0319 28.8872 14.6791 28.0838 13.5764 26.9937C12.4738 25.9036 11.655 24.56 11.1916 23.0804C10.7283 21.6007 10.6344 20.0301 10.9182 18.5058C11.2021 16.9815 11.855 15.55 12.8199 14.3363C13.7849 13.1227 15.0324 12.1638 16.4535 11.5437" stroke="var(--stroke-0, white)" stroke-width="1.89843" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_2" d="M29.7422 20.2488C29.7422 19.0023 29.4967 17.7679 29.0196 16.6163C28.5426 15.4647 27.8434 14.4183 26.962 13.5369C26.0806 12.6554 25.0341 11.9562 23.8825 11.4792C22.7309 11.0022 21.4965 10.7567 20.25 10.7567V20.2488H29.7422Z" stroke="var(--stroke-0, white)" stroke-width="1.89843" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</svg>

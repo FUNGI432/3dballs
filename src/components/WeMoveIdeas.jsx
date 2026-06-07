@@ -55,7 +55,7 @@ export default function WeMoveIdeas() {
           {/* Aggressive Parallax Image 1 */}
           <div className="w-[30vw] xl:w-[514px] h-[18vw] xl:h-[314px] overflow-hidden bg-studio-gray-dark/20 relative z-10 shrink-0 select-none border border-studio-gray-divider/10 rounded-sm">
             <motion.img
-              src="http://localhost:3845/assets/078001f62bde1fec5b5f725fd7435f84d018cd85.png"
+              src="/images/078001f62bde1fec5b5f725fd7435f84d018cd85.png"
               style={{ y: yImage1, scale: 1.5 }}
               className="w-full h-[160%] object-cover absolute top-[-30%]"
               alt="Moving ideas forward illustration"

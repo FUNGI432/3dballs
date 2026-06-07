@@ -7,50 +7,50 @@ const projects = [
   {
     id: "rovo",
     title: "ROVO",
-    frame: "http://localhost:3845/assets/d2d940bc3698372c32d292021ffd74f6b3fc71c5.svg",
-    img: "http://localhost:3845/assets/17cdba68b626a1402a460a066636b78e7ff8f872.png"
+    frame: "/images/d2d940bc3698372c32d292021ffd74f6b3fc71c5.svg",
+    img: "/images/17cdba68b626a1402a460a066636b78e7ff8f872.png"
   },
   {
     id: "titan",
     title: "TITANTECH INVESTMENTS",
-    frame: "http://localhost:3845/assets/78a55727f4087ecda145d9005cb4a5627aeaab53.svg",
-    img: "http://localhost:3845/assets/13fc0cb5dbde8af274397ae4d7686294540274d3.png"
+    frame: "/images/78a55727f4087ecda145d9005cb4a5627aeaab53.svg",
+    img: "/images/13fc0cb5dbde8af274397ae4d7686294540274d3.png"
   },
   {
     id: "phantasia",
     title: "FULLSTACK : pHANTASIA",
-    frame: "http://localhost:3845/assets/ef514bba21958c51ad68bffc464aac61605c5613.svg",
-    img: "http://localhost:3845/assets/7f53588473197b4b3e5ce240915d22444bfa8f32.png"
+    frame: "/images/ef514bba21958c51ad68bffc464aac61605c5613.svg",
+    img: "/images/7f53588473197b4b3e5ce240915d22444bfa8f32.png"
   },
   {
     id: "green-whistle",
     title: "GREEN WHISTLE",
-    frame: "http://localhost:3845/assets/e97d3ad12279903faeac24e95201ad737f9f71be.svg",
-    img: "http://localhost:3845/assets/ee606813127d2de2e504022b7bbcaa2d2edf1775.png"
+    frame: "/images/e97d3ad12279903faeac24e95201ad737f9f71be.svg",
+    img: "/images/ee606813127d2de2e504022b7bbcaa2d2edf1775.png"
   },
   {
     id: "aman-portfolio",
     title: "aman gangwar’s PORTFOLIO",
-    frame: "http://localhost:3845/assets/777e60dc68fcc58207d3eb5bdd0404cbb84e5bd3.svg",
-    img: "http://localhost:3845/assets/15a2973d5eeb80c50cc7a285d180d91f13d2757e.png"
+    frame: "/images/777e60dc68fcc58207d3eb5bdd0404cbb84e5bd3.svg",
+    img: "/images/15a2973d5eeb80c50cc7a285d180d91f13d2757e.png"
   },
   {
     id: "the-kourse",
     title: "THE KOURSE",
-    frame: "http://localhost:3845/assets/46cf3dfd8ce039b98f442072ed8c8c60df3af221.svg",
-    img: "http://localhost:3845/assets/dbd4aceab5e42dc8fd46d7400049dddda252e03f.png"
+    frame: "/images/46cf3dfd8ce039b98f442072ed8c8c60df3af221.svg",
+    img: "/images/dbd4aceab5e42dc8fd46d7400049dddda252e03f.png"
   },
   {
     id: "dc-diamonds",
     title: "DC DIAMONDS",
-    frame: "http://localhost:3845/assets/7cdd531e03c3a43e99d8e39b2f2ad4ff3fbaa297.svg",
-    img: "http://localhost:3845/assets/a5a5337e0487e85ff4e91da07b17682a0084618f.png"
+    frame: "/images/7cdd531e03c3a43e99d8e39b2f2ad4ff3fbaa297.svg",
+    img: "/images/a5a5337e0487e85ff4e91da07b17682a0084618f.png"
   },
   {
     id: "vaibhav-portfolio",
     title: "VAIBHAV KOTHARI’S PORTFOLIO",
-    frame: "http://localhost:3845/assets/9319e418765d70287452367cca8a30874ba15c32.svg",
-    img: "http://localhost:3845/assets/92e7ea5420cb6ae18318bfc955b0af3868b297d4.png"
+    frame: "/images/9319e418765d70287452367cca8a30874ba15c32.svg",
+    img: "/images/92e7ea5420cb6ae18318bfc955b0af3868b297d4.png"
   }
 ];
 

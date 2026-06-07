@@ -147,7 +147,7 @@ export default function Footer() {
                 >
                   <div className="w-[51px] h-[51px] rounded-full overflow-hidden shrink-0">
                     <img 
-                      src="http://localhost:3845/assets/0d4719dbd2ffc578c6afc338f51039e85f14b2d4.png" 
+                      src="/images/0d4719dbd2ffc578c6afc338f51039e85f14b2d4.png" 
                       className="w-full h-full object-cover" 
                       alt="Consultant Avatar" 
                     />
@@ -212,7 +212,7 @@ export default function Footer() {
                   href="#instagram"
                   className="bg-white rounded-full w-[71px] h-[71px] border border-black/5 shadow-[0px_2.5px_5px_0px_rgba(108,113,128,0.08),0px_8.8px_8.8px_0px_rgba(108,113,128,0.07)] flex items-center justify-center cursor-pointer pointer-events-auto"
                 >
-                  <img src="http://localhost:3845/assets/940df21be0da1c1db7ac025c48c231840a4148e9.svg" alt="Instagram" className="w-[30px] h-[30px] object-contain" />
+                  <img src="/images/940df21be0da1c1db7ac025c48c231840a4148e9.svg" alt="Instagram" className="w-[30px] h-[30px] object-contain" />
                 </motion.a>
 
                 {/* YouTube */}
@@ -223,8 +223,8 @@ export default function Footer() {
                   className="bg-white rounded-full w-[71px] h-[71px] border border-black/5 shadow-[0px_2.5px_5px_0px_rgba(108,113,128,0.08),0px_8.8px_8.8px_0px_rgba(108,113,128,0.07)] flex items-center justify-center cursor-pointer relative pointer-events-auto"
                 >
                   <div className="relative w-[30px] h-[30px]">
-                    <img src="http://localhost:3845/assets/dc73f9a47f8dd6814e050c32a2081f90fa2a670d.svg" alt="" className="absolute inset-0 w-full h-full object-contain" />
-                    <img src="http://localhost:3845/assets/af334e496a6ef4db9f947801caff66b102baa48d.svg" alt="YouTube" className="absolute inset-0 w-full h-full object-contain" />
+                    <img src="/images/dc73f9a47f8dd6814e050c32a2081f90fa2a670d.svg" alt="" className="absolute inset-0 w-full h-full object-contain" />
+                    <img src="/images/af334e496a6ef4db9f947801caff66b102baa48d.svg" alt="YouTube" className="absolute inset-0 w-full h-full object-contain" />
                   </div>
                 </motion.a>
 
@@ -235,7 +235,7 @@ export default function Footer() {
                   href="#linkedin"
                   className="bg-white rounded-full w-[71px] h-[71px] border border-black/5 shadow-[0px_2.5px_5px_0px_rgba(108,113,128,0.08),0px_8.8px_8.8px_0px_rgba(108,113,128,0.07)] flex items-center justify-center cursor-pointer pointer-events-auto"
                 >
-                  <img src="http://localhost:3845/assets/f972daa154f870d581cf377a55625ded5b7aad82.svg" alt="LinkedIn" className="w-[30px] h-[30px] object-contain" />
+                  <img src="/images/f972daa154f870d581cf377a55625ded5b7aad82.svg" alt="LinkedIn" className="w-[30px] h-[30px] object-contain" />
                 </motion.a>
               </div>
             </div>
